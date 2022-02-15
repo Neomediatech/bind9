@@ -1,5 +1,5 @@
 FROM neomediatech/ubuntu-base:20.04
-ENV VERSION=9.16.1-0ubuntu2.7 \
+ENV VERSION=9.16.1-0ubuntu2.9 \
     SERVICE=bind9
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
