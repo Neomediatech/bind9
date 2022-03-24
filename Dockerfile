@@ -14,6 +14,7 @@ RUN apt-get update && apt-get -y dist-upgrade && \
     mkdir -p /run/named && chown bind /run/named && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/??_* /usr/share/man/??
 
-EXPOSE 53
+EXPOSE 53/tcp
+EXPOSE 53/udp
 
 CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
