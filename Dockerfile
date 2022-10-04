@@ -14,7 +14,11 @@ RUN apt-get update && apt-get -y dist-upgrade && \
     mkdir -p /run/named && chown bind /run/named && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/??_* /usr/share/man/??
 
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
 EXPOSE 53/tcp
 EXPOSE 53/udp
 
-CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/tini", "--", "/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
