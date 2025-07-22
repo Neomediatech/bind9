@@ -1,0 +1,14 @@
+-----------------------------------
+mar 22 lug 2025, 20:34:37, CEST --- ghcr.io/neomediatech/bind9:latest
+
+Report Summary
+
+┌──────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                      Target                      │  Type  │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ ghcr.io/neomediatech/bind9:latest (ubuntu 22.04) │ ubuntu │        0        │    -    │
+└──────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
