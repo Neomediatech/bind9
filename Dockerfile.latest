@@ -1,9 +1,7 @@
-FROM neomediatech/ubuntu-base:22.04
-ENV BIND_VERSION=9.18 \
-    SERVICE=bind9
+FROM ghcr.io/neomediatech/ubuntu-base:22.04
+ENV SERVICE=bind9
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
-      org.label-schema.version=$BIND_VERSION \
       org.label-schema.vcs-type=Git \
       org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE} \
       org.label-schema.maintainer=Neomediatech
