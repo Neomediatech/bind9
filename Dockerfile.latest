@@ -1,10 +1,9 @@
 FROM ghcr.io/neomediatech/ubuntu-base:22.04
+
 ENV SERVICE=bind9
 
-LABEL maintainer="docker-dario@neomediatech.it" \ 
-      org.label-schema.vcs-type=Git \
-      org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE} \
-      org.label-schema.maintainer=Neomediatech
+LABEL org.opencontainers.image.source=https://github.com/Neomediatech/${SERVICE} \
+      org.opencontainers.package.name="${SERVICE}"
 
 RUN apt-get update && apt-get -y dist-upgrade && \
     apt-get install -y --no-install-recommends --no-install-suggests \
