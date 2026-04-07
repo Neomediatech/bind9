@@ -2,3 +2,4 @@ ven 15 ago 2025, 16:26:14, UTC --- ghcr.io/neomediatech/bind9:latest done (image
 lun 22 set 2025, 16:56:20, CEST --- ghcr.io/neomediatech/bind9:latest done (image build needed: true)
 lun 12 gen 2026, 18:51:52, CET --- ghcr.io/neomediatech/bind9:latest done (image build needed: true)
 lun 9 feb 2026, 13:25:12, CET --- ghcr.io/neomediatech/bind9:latest done (image build needed: true)
+mar 7 apr 2026, 10:25:17, CEST --- ghcr.io/neomediatech/bind9:latest done (image build needed: true)
