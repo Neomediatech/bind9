@@ -1,4 +1,4 @@
-mar 7 apr 2026, 10:25:35, CEST --- ghcr.io/neomediatech/bind9:latest
+lun 22 giu 2026, 17:49:03, CEST --- ghcr.io/neomediatech/bind9:latest
 
 Report Summary
 
